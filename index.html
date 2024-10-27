@@ -27,14 +27,16 @@
     </style>
   </head>
   <body
-    class="font-body text-paragraph bg-neutral-off-white text-neutral-dark-grayish-blue"
+    class="font-body xl:text-paragraph bg-neutral-off-white text-neutral-dark-grayish-blue"
   >
     <header class="flex justify-center mt-20 mb-16">
       <nav class="w-[80%] flex justify-between items-center">
-        <h1 class="text-neutral-very-dark-blue text-7xl font-extrabold">
+        <h1
+          class="text-neutral-very-dark-blue 2xl:text-7xl text-5xl font-extrabold"
+        >
           <a href="#">W.</a>
         </h1>
-        <ul class="flex items-center gap-8">
+        <ul class="hidden sm:flex items-center gap-8 ">
           <li>
             <a href="#" class="hover:text-primary-red active:text-primary-red"
               >Home</a
@@ -61,22 +63,29 @@
             >
           </li>
         </ul>
+        <button id="menu-button" class="sm:hidden">
+          <img src="./assets/images/icon-menu.svg" alt="Menu" />
+        </button>
       </nav>
     </header>
 
     <main class="flex flex-col items-center mb-20">
-      <div class="w-[80%] flex gap-10 mb-20">
-        <section class="w-2/3">
+      <div
+        class="xl:w-[80%] w-[90%] flex lg:flex-row flex-col xl:gap-10 lg:gap-5 gap-10 mb-20"
+      >
+        <section class="lg:w-2/3">
           <!-- image -->
-          <div class="mb-10">
+          <div class="xl:mb-10 mb-5 h-1/2">
             <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0" />
           </div>
 
-          <div class="flex gap-10">
-            <h2 class="text-neutral-very-dark-blue text-7xl font-bold w-1/2">
+          <div class="flex gap-10 h-[45%] items-center">
+            <h2
+              class="text-neutral-very-dark-blue 2xl:text-7xl text-5xl font-bold w-1/2"
+            >
               The Bright Future of Web 3.0?
             </h2>
-            <div class="flex flex-col justify-between w-1/2">
+            <div class="flex flex-col 2xl:justify-between gap-5 w-1/2">
               <p>
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
@@ -84,7 +93,7 @@
               </p>
               <a
                 href="#"
-                class="bg-primary-red w-[50%] p-5 flex justify-center items-center uppercase tracking-[0.2em] font-bold text-neutral-off-white"
+                class="bg-primary-red w-[200px] p-5 flex justify-center items-center uppercase tracking-[0.2em] font-bold text-neutral-off-white"
                 >Read more</a
               >
             </div>
@@ -92,14 +101,16 @@
         </section>
 
         <section
-          class="flex flex-col gap-10 bg-neutral-very-dark-blue px-8 py-14 text-neutral-grayish-blue w-1/3"
+          class="flex flex-col 2xl:gap-10 gap-5 bg-neutral-very-dark-blue xl:px-8 xl:py-14 px-5 py-8 text-neutral-grayish-blue lg:w-1/3"
         >
-          <h3 class="text-5xl text-primary-orange font-bold">News</h3>
+          <h3 class="2xl:text-5xl text-3xl text-primary-orange font-bold">
+            News
+          </h3>
 
           <a href="#" class="group">
             <article>
               <h4
-                class="text-xl text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
+                class="xl:text-xl text-lg text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
               >
                 Hydrogen VS Electric Cars
               </h4>
@@ -111,7 +122,7 @@
           <a href="#" class="group">
             <article>
               <h4
-                class="text-xl text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
+                class="xl:text-xl text-lg text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
               >
                 The Downsides of AI Artistry
               </h4>
@@ -125,7 +136,7 @@
           <a href="#" class="group">
             <article>
               <h4
-                class="text-xl text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
+                class="xl:text-xl text-lg text-neutral-off-white font-bold mb-3 group-hover:text-primary-orange"
               >
                 Is VC Funding Drying Up?
               </h4>
@@ -138,18 +149,28 @@
         </section>
       </div>
 
-      <section class="w-[80%] flex gap-10">
-        <a href="#" class="group w-1/3">
-          <article class="flex gap-5 h-full">
+      <section
+        class="xl:w-[80%] w-[90%] flex lg:flex-row flex-col xl:gap-10 gap-4"
+      >
+        <a href="#" class="group lg:w-1/3 h-[200px]">
+          <article class="flex gap-5 h-full lg:h-auto">
             <!-- image -->
             <div>
-              <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="Retro PC"
+                class="h-full lg:h-auto"
+              />
             </div>
 
             <div class="flex flex-col justify-between">
-              <p class="text-neutral-grayish-blue text-4xl font-bold">01</p>
+              <p
+                class="text-neutral-grayish-blue xl:text-4xl lg:text-2xl text-4xl font-bold"
+              >
+                01
+              </p>
               <h4
-                class="text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
+                class="xl:text-xl lg:text-lg text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
               >
                 Reviving Retro PCs
               </h4>
@@ -158,20 +179,25 @@
           </article>
         </a>
 
-        <a href="#" class="group w-1/3">
-          <article class="flex gap-5">
+        <a href="#" class="group lg:w-1/3 h-[200px]">
+          <article class="flex gap-5 h-full lg:h-auto">
             <!-- image -->
             <div>
               <img
                 src="./assets/images/image-top-laptops.jpg"
                 alt="Top Laptops"
+                class="h-full lg:h-auto"
               />
             </div>
 
             <div class="flex flex-col justify-between">
-              <p class="text-neutral-grayish-blue text-4xl font-bold">02</p>
+              <p
+                class="text-neutral-grayish-blue xl:text-4xl lg:text-2xl text-4xl font-bold"
+              >
+                02
+              </p>
               <h4
-                class="text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
+                class="xl:text-xl lg:text-lg text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
               >
                 Top 10 Laptops of 2022
               </h4>
@@ -180,20 +206,25 @@
           </article>
         </a>
 
-        <a href="#" class="group w-1/3">
-          <article class="flex gap-5">
+        <a href="#" class="group lg:w-1/3 h-[200px]">
+          <article class="flex gap-5 h-full lg:h-auto">
             <!-- image -->
             <div>
               <img
                 src="./assets/images/image-gaming-growth.jpg"
                 alt="Gaming Growth"
+                class="h-full lg:h-auto"
               />
             </div>
 
             <div class="flex flex-col justify-between">
-              <p class="text-neutral-grayish-blue text-4xl font-bold">03</p>
+              <p
+                class="text-neutral-grayish-blue xl:text-4xl lg:text-2xl text-4xl font-bold"
+              >
+                03
+              </p>
               <h4
-                class="text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
+                class="xl:text-xl lg:text-lg text-xl text-neutral-very-dark-blue font-bold group-hover:text-primary-orange"
               >
                 The Growth of Gaming
               </h4>
